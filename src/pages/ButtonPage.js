@@ -1,7 +1,7 @@
 import { GoBell, GoCloudDownload, GoDatabase } from 'react-icons/go';
-import Button from './components/Button';
+import Button from '../components/Button';
 
-function App() {
+function ButtonPage() {
   const handleClick = () => {
     console.log('Clicked!');
   };
@@ -21,13 +21,13 @@ function App() {
         </Button>
       </div>
       <div>
-        <Button danger outline>
+        <Button danger outline onMouseEnter={handleClick}>
           <GoCloudDownload />
           Buy Now!
         </Button>
       </div>
       <div>
-        <Button warning>
+        <Button warning onMouseLeave={handleClick}>
           <GoDatabase />
           See Deal!
         </Button>
@@ -46,4 +46,4 @@ function App() {
   );
 }
 
-export default App;
+export default ButtonPage;
