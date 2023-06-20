@@ -11,7 +11,7 @@ function App() {
     <div className="col-span-5">
       <Route path="/accordion"><AccordionPage/></Route>
       <Route path="/buttons"><ButtonPage/></Route>
-      <Route path="/modals"><ModalPage/></Route>
+      <Route path="/modal"><ModalPage/></Route>
       <Route path="/"><DropdownPage/></Route>
     </div>
   </div>
